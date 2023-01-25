@@ -8,6 +8,8 @@ public class Final {
 	
 	public static void main(String[] args){
 		try {
+			QuestionSet que=new QuestionSet();
+			que.getInsert();
 			Student stu=new Student();
 			Scanner sc=new Scanner(System.in);
 			System.out.println("--------------------Online EXamination System--------------------");
