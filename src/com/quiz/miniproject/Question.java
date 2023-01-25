@@ -107,7 +107,7 @@ public class Question  {
 				}
 			}
 			Thread.sleep(1000);
-			System.out.println(k+ "..!You got"+Marks+"/"+questions.length+" Your Grade =>>"+Grade);
+			System.out.println(k+ "..!You got"+Marks+"/"+questions.length+" Your Grade =>"+Grade);
 		}
 			
 		}

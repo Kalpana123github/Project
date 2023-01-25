@@ -13,7 +13,8 @@ public class Student {
 	PreparedStatement ps=null;
 	int select;
 	Scanner sc=new Scanner(System.in);
-	Display dis=new Display();
+	
+
 	
 	public Connection getconnection()  throws Exception{
 		
@@ -30,14 +31,14 @@ public class Student {
 	}
 	
 	public void getInsert() throws Exception{
-		
+		Display dis=new Display();
 		try {
 			getconnection();
 		ps=con.prepareStatement("insert into result(Roll_No,Student_Name,Marks,Grade)values(?,?,?,?)");
 		ps.setInt(1,Roll_No);
-		
+		Thread.sleep(500);
 		ps.setString(2, Student_Name);
-		
+		Thread.sleep(500);
 		que.quizSet();
 		ps.setInt(3,que.getMarks());
 		ps.setString(4, que.Grade);
@@ -59,16 +60,17 @@ public class Student {
 		}
 		
 		System.out.println("----------Admin Login----------");
-		
+		Thread.sleep(500);
 		System.out.println("Enter UserName");
-		String username=sc.next();
-		
+		int username=sc.nextInt();
+		Thread.sleep(500);
 		System.out.println("Enter Password");
-		String pwd=sc.next();
+		int pwd=sc.nextInt();
 		
 		
-		if(username=="admin"&&pwd=="admin@123") {
-		System.out.println("Please press 1 for answerkey");
+		if(username==1234 & pwd==1234) {
+			
+		System.out.println("Please press 1 for Student Information");
 		select=sc.nextInt();
 		
 		System.out.println("**************************************************************");
@@ -76,6 +78,7 @@ public class Student {
 		
 		dis.getStudent();
 		}
+		
 		}catch (Exception e) {
 			e.printStackTrace();
 		}

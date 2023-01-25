@@ -9,8 +9,11 @@ public class Display {
 
 	Connection con=null;
 	 PreparedStatement ps=null;
-	 Student stu=new Student();
+	 
+	
+	 
 	public  void getQuestion() throws Exception {
+		 Student stu=new Student();
 		try {
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		con=DriverManager.getConnection("jdbc:mysql://localhost:3306/quiz_project","root","root");
