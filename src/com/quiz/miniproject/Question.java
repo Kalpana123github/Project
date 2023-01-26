@@ -27,10 +27,10 @@ public class Question  {
 		
 	public  void quizSet() throws Exception {
 		String Q1="Which one of the following is not a Java feature?\n"
-				+"a)Object-oriented\nb)Use of pointers\nc)Portable\nd)Dynamic and Extensible";
+				+"a)Object-oriented\nb)Use of pointers\nc)Portable\nd)Dynamic and Extensible\n";
 		
 		String Q2="Which of the following is not an OOPS concept in Java?\n"
-				+ "a)Polymorphism\nb)Inheritance\nc)Compilation\nd) Encapsulation";
+				+ "a)Polymorphism\nb)Inheritance\nc)Compilation\nd) Encapsulation\n";
 		
 		String Q3="Which of the following are not Java keywords?\n"
 				+ "a)double\nb)switch\nc)then\nd)instanceOf\n";
@@ -54,7 +54,7 @@ public class Question  {
 				+ "a)MemoryError\nb)OutOfMemoryError\nc)MemoryOutOfBoundsException\nd)MemoryFullException\n";
 		
 		String Q10="Which component is used to compile, debug and execute the java programs?\n"
-				+  "a)JRE\nb)JIT\nc)JDK\nd)JVM";
+				+  "a)JRE\nb)JIT\nc)JDK\nd)JVM\n";
 			
 	
 				Question [] que= {

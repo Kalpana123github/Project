@@ -20,13 +20,14 @@ public class Display {
 		ps=con.prepareStatement("select * from question");
 		ResultSet rs=ps.executeQuery();
 		while(rs.next()) {
-			System.out.print("Question no =>  "+rs.getInt(1));
+			System.out.print("Question no => "+rs.getInt(1));
 		
-			System.out.println(rs.getString(2));
+			System.out.println("="+rs.getString(2));
 			
-			System.out.println("Correct Answer=>"+rs.getString(3));
+			System.out.println("Correct Answer=> "+rs.getString(3));
 			//Thread.sleep(400);
 			System.out.println("-------------------------------------------------------------");
+			
 		}
 		
 		} catch (Exception e) {

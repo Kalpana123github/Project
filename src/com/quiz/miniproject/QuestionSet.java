@@ -25,11 +25,17 @@ public class QuestionSet {
 		}
 		return con;
 	}
+	//SELECT EXISTS(SELECT * FROM yourTableName WHERE yourCondition);
 	
 	public void getInsert() throws Exception{
-		Display dis=new Display();
+		String k="SELECT EXISTS(SELECT * FROM question WHERE queNo)";
+		
+		
+		
 		try {
 			getconnection();
+		ps=con.prepareStatement("truncate question");
+		ps.execute();
 		ps=con.prepareStatement("insert into question(queNo,question,answer)values(?,?,?)");
 		ps.setInt(1,1);
 		ps.setString(2,"Which of the following is not a java feature?");
@@ -71,7 +77,8 @@ public class QuestionSet {
 		ps.setString(2,"Which of the following is not a java keyword?");
 		ps.setString(3, "then");
 		ps.execute();
-		System.out.println("done...");
+	
+		
 		}
 		catch(Exception e) {
 			e.printStackTrace();

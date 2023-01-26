@@ -41,7 +41,7 @@ public class Student {
 		Thread.sleep(500);
 		que.quizSet();
 		ps.setInt(3,que.getMarks());
-		ps.setString(4, que.Grade);
+		ps.setString(4, que.getGrade());
 		ps.executeUpdate();
 		Thread.sleep(1000);
 		System.out.println("Record Added...");
