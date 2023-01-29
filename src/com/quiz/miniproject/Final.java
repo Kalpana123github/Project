@@ -2,6 +2,12 @@ package com.quiz.miniproject;
 
 import java.util.Scanner;
 
+/* 1 class naming is confusing
+ * 2 wrong input type is not handled ...no exception generated for wrong input type.
+ * 3 Questions always repeat in same pattern no randomness in questions display
+ * 4 Why admin user name is being asked after exam ...no idea??
+ * 
+ */
 public class Final {
 	
 	Question app=new Question();

@@ -1,5 +1,9 @@
 package com.quiz.miniproject;
 
+/* This class also contains main method why?
+ * Unused class 
+ * 
+ */
 public class Marks {
 
 	

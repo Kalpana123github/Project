@@ -3,12 +3,12 @@ package com.quiz.miniproject;
 import java.util.Scanner;
 
 public class Question  {
-		int Marks;
+		int Marks; //wrong way of writing variable name
 		String ques;
 		String answer;
-		String Grade;
-		String k;
-		
+		String Grade; //wrong way of writing variable name
+		String k; //wrong way of writing variable name
+		 
 		public String getGrade() {
 			return Grade;
 		}
